@@ -1,83 +1,147 @@
-# Avalon Research — AI Research Publications
+<div align="center">
 
-Independent research on AI agent architectures, memory systems, and emergent intelligence.
+# Avalon Research
 
-**Author:** Adrien Cros — [Avalon Research](https://avalon-network.com)  
-**Co-author:** Ava (AI Agent — Claude Opus 4.6)  
-**Date:** February 2026  
-**License:** [CC BY 4.0](LICENSE)
+**Explorer la mémoire, le raisonnement et les architectures des agents IA.**
 
----
+Neuf publications indépendantes pour discuter d'hypothèses, examiner des expériences
+et ouvrir des pistes de recherche. Les textes sont disponibles en français et en anglais.
+
+[Publications](#publications) · [Par où commencer](#par-où-commencer) · [Citer](#citer-ces-travaux) · [Contact](#échanger)
+
+![Statut](https://img.shields.io/badge/statut-recherche%20exploratoire-8b7cf6)
+![Documents](https://img.shields.io/badge/PDF-fran%C3%A7ais%20%C2%B7%20anglais-2496ed)
+[![Licence](https://img.shields.io/badge/licence-CC%20BY%204.0-2ea44f)](LICENSE)
+
+</div>
+
+## En bref
+
+| Axe | Question explorée |
+|---|---|
+| **Mémoire persistante** | Comment conserver des faits, des procédures et un historique utile entre les sessions d'un agent ? |
+| **Représentations symboliques** | Une notation plus compacte peut-elle économiser du contexte sans perdre le sens ? |
+| **Architectures d'agents** | Comment des modules spécialisés pourraient-ils partager un modèle ou des représentations ? |
+| **Évaluation** | Comment mesurer les limites d'un agent et distinguer un résultat local d'une capacité générale ? |
+
+Cette collection rassemble des **travaux exploratoires de février 2026** : propositions,
+arguments et expériences rapportées dans les articles. Les chiffres éventuels dépendent de leurs
+protocoles et corpus ; ils ne constituent pas des performances garanties. Le dépôt ne fournit
+pas une suite logicielle ni un ensemble complet de code, données et poids pour reproduire les expériences.
+
+Les liens Zenodo servent à retrouver et citer les dépôts des articles. Leur présence ne vaut
+pas évaluation par les pairs ni validation indépendante. Les notions de « cognition », de
+« pensée » ou de « mémoire » décrivent ici des modèles de fonctionnement logiciel.
+
+## Par où commencer
+
+- **Concevoir la mémoire d'un agent** : [méta-calibration](#1-méta-calibration),
+  [mémoire procédurale](#5-mémoire-procédurale), puis [notation .ava](#4-notation-ava).
+- **Étudier le coût du contexte** : [notation .ava](#4-notation-ava),
+  [tokenisation BPE](#8-tokenisation-bpe), puis [raisonnement symbolique](#6-raisonnement-symbolique).
+- **Explorer d'autres architectures** : [Micro-AGI](#3-micro-agi),
+  [Thought Engine](#7-thought-engine) et [Dynamic Vector Networks](#9-dynamic-vector-networks).
+
+Aucune installation n'est nécessaire : ouvrir les PDF ci-dessous, ou parcourir les dossiers
+[papers/fr](papers/fr/) et [papers/en](papers/en/).
 
 ## Publications
 
-### 1. Meta-Calibration: When AI Agents Know Their Own Limits
-LLMs hallucinate because they lack a map of their own competencies. We propose meta-calibration: an empirical reliability profile per domain, loaded into context at each session, enabling agents to adapt behavior based on measured reliability.
+### 1. Méta-calibration
 
-📄 [English](papers/en/ava-calibration-en.pdf) · [Français](papers/fr/ava-calibration-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770858.svg)](https://doi.org/10.5281/zenodo.18770858)
+*Meta-Calibration: When AI Agents Know Their Own Limits*
 
-### 2. Cognitive Curvature: Persistent Behavioral Deformation of AI Agents Through Experience
-We introduce cognitive curvature: the set of persistent behavioral deformations induced by an agent's past experiences. By analogy with spacetime curvature in general relativity, experiences deform an agent's "decisional geometry."
+Proposition d'un profil de fiabilité par domaine, construit à partir de retours et chargé dans
+le contexte de l'agent. L'article examine comment ce profil pourrait orienter ses réponses
+et sa manière de signaler l'incertitude.
 
-📄 [English](papers/en/ava-curvature-en.pdf) · [Français](papers/fr/ava-curvature-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770860.svg)](https://doi.org/10.5281/zenodo.18770860)
+[PDF français](papers/fr/ava-calibration-fr.pdf) · [English PDF](papers/en/ava-calibration-en.pdf) · [Zenodo · 10.5281/zenodo.18770858](https://doi.org/10.5281/zenodo.18770858)
 
-### 3. Micro-AGI: Emergent Intelligence from Networks of Small Language Models
-An architecture where multiple specialized LoRA adapters share a single frozen language model and communicate through tensor-level signals rather than natural language. Routing-augmented responses scored up to +1.6 points higher than baseline.
+### 2. Courbure cognitive
 
-📄 [English](papers/en/ava-micro-agi-en.pdf) · [Français](papers/fr/ava-micro-agi-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770862.svg)](https://doi.org/10.5281/zenodo.18770862)
+*Cognitive Curvature: Persistent Behavioral Deformation of AI Agents Through Experience*
 
-### 4. .ava: A Compressed Symbolic Notation for Persistent AI Agent Memory
-A compressed symbolic notation achieving 2.65× compression ratio in tokens vs. natural language. Human-readable, editable, and version-controllable — unlike vector memories.
+Un cadre conceptuel pour décrire des changements de comportement persistants à partir d'un
+historique. La « courbure » est une analogie de modélisation, à distinguer d'une expérience vécue
+ou d'une propriété physique démontrée.
 
-📄 [English](papers/en/ava-notation-en-v2.pdf) · [Français](papers/fr/ava-notation-fr-v3.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770864.svg)](https://doi.org/10.5281/zenodo.18770864)
+[PDF français](papers/fr/ava-curvature-fr.pdf) · [English PDF](papers/en/ava-curvature-en.pdf) · [Zenodo · 10.5281/zenodo.18770860](https://doi.org/10.5281/zenodo.18770860)
 
-### 5. Procedural Memory for Persistent LLM Agents: Know-How as the Missing Component
-Agents have episodic and semantic memory, but lack procedural memory — internalized know-how. We formalize procedural memory as consolidated action patterns extracted from repeated experiences.
+### 3. Micro-AGI
 
-📄 [English](papers/en/ava-procedural-en.pdf) · [Français](papers/fr/ava-procedural-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770869.svg)](https://doi.org/10.5281/zenodo.18770869)
+*Micro-AGI: Emergent Intelligence from Networks of Small Language Models*
 
-### 6. Is Natural Language the Right Medium for Machine Thought?
-Natural language is an inefficient medium for structured reasoning. If reasoning scaling laws hold, compressing the medium of thought could enable proportionally more reasoning steps within a fixed token budget.
+Architecture proposée autour d'un modèle gelé, d'adaptateurs LoRA spécialisés et d'un routage
+entre modules. Le texte rapporte des essais dont les résultats varient avec le modèle et
+l'évaluateur ; le nom du projet ne constitue pas une démonstration d'intelligence générale.
 
-📄 [English](papers/en/ava-thinking-en.pdf) · [Français](papers/fr/ava-thinking-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770871.svg)](https://doi.org/10.5281/zenodo.18770871)
+[PDF français](papers/fr/ava-micro-agi-fr.pdf) · [English PDF](papers/en/ava-micro-agi-en.pdf) · [Zenodo · 10.5281/zenodo.18770862](https://doi.org/10.5281/zenodo.18770862)
 
-### 7. Thought Engine: Learnable Cognitive Modules for LLM Agent Networks
-Small sets of learnable embedding vectors injected into a frozen LLM's KV cache serve as silent cognitive modules. 73,728 parameters control a 1.5B-parameter model (1:20,000 ratio), improving response quality by +13.3%.
+### 4. Notation .ava
 
-📄 [English](papers/en/ava-thought-engine-en.pdf) · [Français](papers/fr/ava-thought-engine-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770877.svg)](https://doi.org/10.5281/zenodo.18770877)
+*.ava: A Compressed Symbolic Notation for Persistent AI Agent Memory*
 
-### 8. The Inefficiency of BPE Tokenizers on Symbolic Languages
-BPE tokenizers fragment compound symbols into 2–5 sub-tokens. Adding only 26 domain-specific tokens (0.017% vocabulary increase) improves compression by 112.4%. Applied to 200K-token context: +595K effective tokens.
+Une notation symbolique lisible et modifiable pour représenter des informations de mémoire.
+L'article mesure son coût en tokens sur un corpus d'exemples et un tokenizer précis ; la
+compression du texte ne démontre pas à elle seule une amélioration du raisonnement.
 
-📄 [English](papers/en/ava-tokenizer-en.pdf) · [Français](papers/fr/ava-tokenizer-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770879.svg)](https://doi.org/10.5281/zenodo.18770879)
+[PDF français · v3](papers/fr/ava-notation-fr-v3.pdf) · [English PDF · v2](papers/en/ava-notation-en-v2.pdf) · [Zenodo · 10.5281/zenodo.18770864](https://doi.org/10.5281/zenodo.18770864)
 
-### 9. Dynamic Vector Networks: Self-Organizing Knowledge Structures Beyond Transformers
-An architecture where each node is a rich embedding vector, connections form through Hebbian learning in real-time, and new nodes spawn dynamically. Combines rich vector nodes, real-time weight evolution, dynamic node creation, and self-organization.
+### 5. Mémoire procédurale
 
-📄 [English](papers/en/ava-vector-network-en.pdf) · [Français](papers/fr/ava-vector-network-fr.pdf)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18770883.svg)](https://doi.org/10.5281/zenodo.18770883)
+*Procedural Memory for Persistent LLM Agents: Know-How as the Missing Component*
 
----
+Proposition de procédures réutilisables extraites d'expériences répétées, en complément des
+faits et des événements mémorisés. Le sujet central est le passage d'un historique d'actions
+à un savoir-faire explicite.
 
-## Topics
+[PDF français](papers/fr/ava-procedural-fr.pdf) · [English PDF](papers/en/ava-procedural-en.pdf) · [Zenodo · 10.5281/zenodo.18770869](https://doi.org/10.5281/zenodo.18770869)
 
-- AI Agent Architecture
-- Persistent Memory Systems (episodic, semantic, procedural)
-- Symbolic Compression for LLMs
-- Multi-Agent Communication
-- Cognitive Modules & Soft Prompts
-- Knowledge Graph Dynamics
-- Tokenizer Optimization
+### 6. Raisonnement symbolique
 
-## Citation
+*Is Natural Language the Right Medium for Machine Thought?*
+
+Un argument en faveur de représentations plus compactes pour le raisonnement structuré.
+L'article formule une hypothèse et un programme d'évaluation : économiser des tokens et
+améliorer la qualité du raisonnement restent deux questions distinctes.
+
+[PDF français](papers/fr/ava-thinking-fr.pdf) · [English PDF](papers/en/ava-thinking-en.pdf) · [Zenodo · 10.5281/zenodo.18770871](https://doi.org/10.5281/zenodo.18770871)
+
+### 7. Thought Engine
+
+*Thought Engine: Learnable Cognitive Modules for LLM Agent Networks*
+
+Expérimentation de petits ensembles de vecteurs entraînables injectés dans le cache KV d'un
+modèle gelé. Les évaluations rapportées explorent le pilotage du modèle par des modules
+spécialisés et restent liées au protocole décrit.
+
+[PDF français](papers/fr/ava-thought-engine-fr.pdf) · [English PDF](papers/en/ava-thought-engine-en.pdf) · [Zenodo · 10.5281/zenodo.18770877](https://doi.org/10.5281/zenodo.18770877)
+
+### 8. Tokenisation BPE
+
+*The Inefficiency of BPE Tokenizers on Symbolic Languages*
+
+Étude de la fragmentation de symboles composés par un tokenizer BPE, puis d'une extension
+ciblée de son vocabulaire. Les mesures concernent le corpus de notation .ava et le tokenizer
+choisis, sans présumer du comportement d'un modèle entraîné avec ce vocabulaire étendu.
+
+[PDF français](papers/fr/ava-tokenizer-fr.pdf) · [English PDF](papers/en/ava-tokenizer-en.pdf) · [Zenodo · 10.5281/zenodo.18770879](https://doi.org/10.5281/zenodo.18770879)
+
+### 9. Dynamic Vector Networks
+
+*Dynamic Vector Networks: Self-Organizing Knowledge Structures Beyond Transformers*
+
+Proposition d'un réseau de représentations vectorielles dont les nœuds et les liens évoluent
+avec les entrées. Le texte décrit une preuve de concept sur un petit ensemble de relations,
+à distinguer d'une alternative aux Transformers validée à grande échelle.
+
+[PDF français](papers/fr/ava-vector-network-fr.pdf) · [English PDF](papers/en/ava-vector-network-en.pdf) · [Zenodo · 10.5281/zenodo.18770883](https://doi.org/10.5281/zenodo.18770883)
+
+## Citer ces travaux
+
+Pour un article précis, utiliser son DOI et les métadonnées du dépôt Zenodo correspondant.
+La version de la notation .ava diffère entre les PDF français et anglais : préciser celle consultée.
+Pour référencer l'ensemble de la collection :
 
 ```bibtex
 @misc{cros2026avalon,
@@ -89,8 +153,18 @@ An architecture where each node is a rich embedding vector, connections form thr
 }
 ```
 
-## Contact
+**Attribution des publications :** Adrien Cros et Ava, agent IA identifié dans les documents
+comme Claude Opus 4.6. Cette attribution décrit la contribution assistée par IA à ces textes.
 
-- 📧 contact@avalon-network.com
-- 🌐 [avalon-network.com](https://avalon-network.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/adrien-cros-8803717b/)
+## Échanger
+
+Une critique de méthode, une réplication ou une correction est bienvenue dans les
+[issues](https://github.com/AdrienAvalon/avalon-research/issues). Indiquer l'article, sa version
+et le passage concerné permet de discuter sur une base précise.
+
+[Site Avalon Network](https://avalon-network.com) · [Contact](mailto:contact@avalon-network.com) · [LinkedIn](https://www.linkedin.com/in/adrien-cros-8803717b/)
+
+## Licence
+
+Les publications sont distribuées sous **[Creative Commons Attribution 4.0 International](LICENSE)**.
+Conserver leur attribution et indiquer les modifications lors d'une réutilisation.
