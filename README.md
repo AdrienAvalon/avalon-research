@@ -1,17 +1,22 @@
+**Français** · [English](README.en.md)
+
 <div align="center">
+
+<img src="docs/assets/research.svg" alt="Trois nœuds reliés autour d’une mémoire centrale, emblème Avalon Research." width="112">
 
 # Avalon Research
 
 **Explorer la mémoire, le raisonnement et les architectures des agents IA.**
 
-Neuf publications indépendantes pour discuter d'hypothèses, examiner des expériences
-et ouvrir des pistes de recherche. Les textes sont disponibles en français et en anglais.
+Une collection de publications exploratoires pour examiner des hypothèses, discuter des méthodes
+et ouvrir des pistes de recherche. À lire en français ou en anglais, sans installation.
 
-[Publications](#publications) · [Par où commencer](#par-où-commencer) · [Citer](#citer-ces-travaux) · [Contact](#échanger)
+[Choisir un article](#publications) · [Parcours de lecture](#par-où-commencer) · [Citer](#citer-ces-travaux) · [Échanger](#échanger)
 
-![Statut](https://img.shields.io/badge/statut-recherche%20exploratoire-8b7cf6)
-![Documents](https://img.shields.io/badge/PDF-fran%C3%A7ais%20%C2%B7%20anglais-2496ed)
-[![Licence](https://img.shields.io/badge/licence-CC%20BY%204.0-2ea44f)](LICENSE)
+[![Statut : recherche exploratoire](https://img.shields.io/badge/statut-recherche%20exploratoire-8b7cf6?style=flat-square)](#en-bref)
+[![PDF : français et anglais](https://img.shields.io/badge/PDF-fran%C3%A7ais%20%C2%B7%20anglais-2496ed?style=flat-square)](#publications)
+[![Références : DOI Zenodo](https://img.shields.io/badge/r%C3%A9f%C3%A9rences-DOI%20Zenodo-1682d4?style=flat-square)](#citer-ces-travaux)
+[![Licence : CC BY 4.0](https://img.shields.io/badge/licence-CC%20BY%204.0-2ea44f?style=flat-square)](LICENSE)
 
 </div>
 
@@ -35,17 +40,32 @@ pas évaluation par les pairs ni validation indépendante. Les notions de « cog
 
 ## Par où commencer
 
-- **Concevoir la mémoire d'un agent** : [méta-calibration](#1-méta-calibration),
-  [mémoire procédurale](#5-mémoire-procédurale), puis [notation .ava](#4-notation-ava).
-- **Étudier le coût du contexte** : [notation .ava](#4-notation-ava),
-  [tokenisation BPE](#8-tokenisation-bpe), puis [raisonnement symbolique](#6-raisonnement-symbolique).
-- **Explorer d'autres architectures** : [Micro-AGI](#3-micro-agi),
-  [Thought Engine](#7-thought-engine) et [Dynamic Vector Networks](#9-dynamic-vector-networks).
+| Votre question | Parcours suggéré |
+|---|---|
+| **Que conserver entre deux sessions ?** | [Méta-calibration](papers/fr/ava-calibration-fr.pdf) → [Mémoire procédurale](papers/fr/ava-procedural-fr.pdf) → [Notation .ava](papers/fr/ava-notation-fr-v3.pdf) |
+| **Comment représenter le contexte ?** | [Notation .ava](papers/fr/ava-notation-fr-v3.pdf) → [Tokenisation BPE](papers/fr/ava-tokenizer-fr.pdf) → [Raisonnement symbolique](papers/fr/ava-thinking-fr.pdf) |
+| **Comment organiser des modules spécialisés ?** | [Micro-AGI](papers/fr/ava-micro-agi-fr.pdf) → [Thought Engine](papers/fr/ava-thought-engine-fr.pdf) → [Dynamic Vector Networks](papers/fr/ava-vector-network-fr.pdf) |
 
-Aucune installation n'est nécessaire : ouvrir les PDF ci-dessous, ou parcourir les dossiers
-[papers/fr](papers/fr/) et [papers/en](papers/en/).
+Les parcours ouvrent les PDF français. Les versions anglaises sont accessibles dans le catalogue ci-dessous.
 
 ## Publications
+
+| Article | Français | English | Référence |
+|---|:---:|:---:|---|
+| **Méta-calibration** | [PDF](papers/fr/ava-calibration-fr.pdf) | [PDF](papers/en/ava-calibration-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770858) |
+| **Courbure cognitive** | [PDF](papers/fr/ava-curvature-fr.pdf) | [PDF](papers/en/ava-curvature-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770860) |
+| **Micro-AGI** | [PDF](papers/fr/ava-micro-agi-fr.pdf) | [PDF](papers/en/ava-micro-agi-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770862) |
+| **Notation .ava** | [PDF · v3](papers/fr/ava-notation-fr-v3.pdf) | [PDF · v2](papers/en/ava-notation-en-v2.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770864) |
+| **Mémoire procédurale** | [PDF](papers/fr/ava-procedural-fr.pdf) | [PDF](papers/en/ava-procedural-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770869) |
+| **Raisonnement symbolique** | [PDF](papers/fr/ava-thinking-fr.pdf) | [PDF](papers/en/ava-thinking-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770871) |
+| **Thought Engine** | [PDF](papers/fr/ava-thought-engine-fr.pdf) | [PDF](papers/en/ava-thought-engine-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770877) |
+| **Tokenisation BPE** | [PDF](papers/fr/ava-tokenizer-fr.pdf) | [PDF](papers/en/ava-tokenizer-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770879) |
+| **Dynamic Vector Networks** | [PDF](papers/fr/ava-vector-network-fr.pdf) | [PDF](papers/en/ava-vector-network-en.pdf) | [DOI ↗](https://doi.org/10.5281/zenodo.18770883) |
+
+Les versions française et anglaise de la notation `.ava` diffèrent : préciser la version consultée.
+
+<details>
+<summary><strong>Lire les résumés et les limites de chaque article</strong></summary>
 
 ### 1. Méta-calibration
 
@@ -55,8 +75,6 @@ Proposition d'un profil de fiabilité par domaine, construit à partir de retour
 le contexte de l'agent. L'article examine comment ce profil pourrait orienter ses réponses
 et sa manière de signaler l'incertitude.
 
-[PDF français](papers/fr/ava-calibration-fr.pdf) · [English PDF](papers/en/ava-calibration-en.pdf) · [Zenodo · 10.5281/zenodo.18770858](https://doi.org/10.5281/zenodo.18770858)
-
 ### 2. Courbure cognitive
 
 *Cognitive Curvature: Persistent Behavioral Deformation of AI Agents Through Experience*
@@ -64,8 +82,6 @@ et sa manière de signaler l'incertitude.
 Un cadre conceptuel pour décrire des changements de comportement persistants à partir d'un
 historique. La « courbure » est une analogie de modélisation, à distinguer d'une expérience vécue
 ou d'une propriété physique démontrée.
-
-[PDF français](papers/fr/ava-curvature-fr.pdf) · [English PDF](papers/en/ava-curvature-en.pdf) · [Zenodo · 10.5281/zenodo.18770860](https://doi.org/10.5281/zenodo.18770860)
 
 ### 3. Micro-AGI
 
@@ -75,8 +91,6 @@ Architecture proposée autour d'un modèle gelé, d'adaptateurs LoRA spécialis�
 entre modules. Le texte rapporte des essais dont les résultats varient avec le modèle et
 l'évaluateur ; le nom du projet ne constitue pas une démonstration d'intelligence générale.
 
-[PDF français](papers/fr/ava-micro-agi-fr.pdf) · [English PDF](papers/en/ava-micro-agi-en.pdf) · [Zenodo · 10.5281/zenodo.18770862](https://doi.org/10.5281/zenodo.18770862)
-
 ### 4. Notation .ava
 
 *.ava: A Compressed Symbolic Notation for Persistent AI Agent Memory*
@@ -84,8 +98,6 @@ l'évaluateur ; le nom du projet ne constitue pas une démonstration d'intellige
 Une notation symbolique lisible et modifiable pour représenter des informations de mémoire.
 L'article mesure son coût en tokens sur un corpus d'exemples et un tokenizer précis ; la
 compression du texte ne démontre pas à elle seule une amélioration du raisonnement.
-
-[PDF français · v3](papers/fr/ava-notation-fr-v3.pdf) · [English PDF · v2](papers/en/ava-notation-en-v2.pdf) · [Zenodo · 10.5281/zenodo.18770864](https://doi.org/10.5281/zenodo.18770864)
 
 ### 5. Mémoire procédurale
 
@@ -95,8 +107,6 @@ Proposition de procédures réutilisables extraites d'expériences répétées, 
 faits et des événements mémorisés. Le sujet central est le passage d'un historique d'actions
 à un savoir-faire explicite.
 
-[PDF français](papers/fr/ava-procedural-fr.pdf) · [English PDF](papers/en/ava-procedural-en.pdf) · [Zenodo · 10.5281/zenodo.18770869](https://doi.org/10.5281/zenodo.18770869)
-
 ### 6. Raisonnement symbolique
 
 *Is Natural Language the Right Medium for Machine Thought?*
@@ -104,8 +114,6 @@ faits et des événements mémorisés. Le sujet central est le passage d'un hist
 Un argument en faveur de représentations plus compactes pour le raisonnement structuré.
 L'article formule une hypothèse et un programme d'évaluation : économiser des tokens et
 améliorer la qualité du raisonnement restent deux questions distinctes.
-
-[PDF français](papers/fr/ava-thinking-fr.pdf) · [English PDF](papers/en/ava-thinking-en.pdf) · [Zenodo · 10.5281/zenodo.18770871](https://doi.org/10.5281/zenodo.18770871)
 
 ### 7. Thought Engine
 
@@ -115,8 +123,6 @@ Expérimentation de petits ensembles de vecteurs entraînables injectés dans le
 modèle gelé. Les évaluations rapportées explorent le pilotage du modèle par des modules
 spécialisés et restent liées au protocole décrit.
 
-[PDF français](papers/fr/ava-thought-engine-fr.pdf) · [English PDF](papers/en/ava-thought-engine-en.pdf) · [Zenodo · 10.5281/zenodo.18770877](https://doi.org/10.5281/zenodo.18770877)
-
 ### 8. Tokenisation BPE
 
 *The Inefficiency of BPE Tokenizers on Symbolic Languages*
@@ -124,8 +130,6 @@ spécialisés et restent liées au protocole décrit.
 Étude de la fragmentation de symboles composés par un tokenizer BPE, puis d'une extension
 ciblée de son vocabulaire. Les mesures concernent le corpus de notation .ava et le tokenizer
 choisis, sans présumer du comportement d'un modèle entraîné avec ce vocabulaire étendu.
-
-[PDF français](papers/fr/ava-tokenizer-fr.pdf) · [English PDF](papers/en/ava-tokenizer-en.pdf) · [Zenodo · 10.5281/zenodo.18770879](https://doi.org/10.5281/zenodo.18770879)
 
 ### 9. Dynamic Vector Networks
 
@@ -135,13 +139,16 @@ Proposition d'un réseau de représentations vectorielles dont les nœuds et les
 avec les entrées. Le texte décrit une preuve de concept sur un petit ensemble de relations,
 à distinguer d'une alternative aux Transformers validée à grande échelle.
 
-[PDF français](papers/fr/ava-vector-network-fr.pdf) · [English PDF](papers/en/ava-vector-network-en.pdf) · [Zenodo · 10.5281/zenodo.18770883](https://doi.org/10.5281/zenodo.18770883)
+</details>
 
 ## Citer ces travaux
 
 Pour un article précis, utiliser son DOI et les métadonnées du dépôt Zenodo correspondant.
 La version de la notation .ava diffère entre les PDF français et anglais : préciser celle consultée.
 Pour référencer l'ensemble de la collection :
+
+<details>
+<summary><strong>Copier la référence BibTeX de la collection</strong></summary>
 
 ```bibtex
 @misc{cros2026avalon,
@@ -152,6 +159,8 @@ Pour référencer l'ensemble de la collection :
   url = {https://github.com/AdrienAvalon/avalon-research}
 }
 ```
+
+</details>
 
 **Attribution des publications :** Adrien Cros et Ava, agent IA identifié dans les documents
 comme Claude Opus 4.6. Cette attribution décrit la contribution assistée par IA à ces textes.
@@ -167,4 +176,6 @@ et le passage concerné permet de discuter sur une base précise.
 ## Licence
 
 Les publications sont distribuées sous **[Creative Commons Attribution 4.0 International](LICENSE)**.
-Conserver leur attribution et indiquer les modifications lors d'une réutilisation.
+Cette licence autorise le partage et l'adaptation, **y compris pour un usage commercial**,
+avec attribution, lien vers la licence et indication des modifications.
+Voir le [résumé officiel de CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

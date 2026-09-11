@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Avalon Research</title>
+  <desc id="desc">Un réseau de trois nœuds reliés à des couches de mémoire centrales.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="144" height="144" rx="38" fill="#111827"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 35v19M43 113l17-11m57 11-17-11"/>
+    <path d="m48 76 32-18 32 18-32 18Z"/>
+    <path d="m48 87 32 18 32-18m-64 11 32 18 32-18"/>
+  </g>
+  <g fill="#111827" stroke="url(#accent)" stroke-width="3">
+    <circle cx="80" cy="30" r="7"/>
+    <circle cx="37" cy="117" r="7"/>
+    <circle cx="123" cy="117" r="7"/>
+  </g>
+</svg>
